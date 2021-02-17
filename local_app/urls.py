@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import testfunc
+from .views import testfunc, create_message
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test/', testfunc)
+    path('test/', testfunc),
+    path('callback/', create_message)
 ]
