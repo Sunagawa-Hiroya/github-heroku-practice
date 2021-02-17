@@ -6,4 +6,5 @@ def testfunc(request):
 
 
 def create_message(request):
+    print(request.body)
     return HttpResponse('Lineに返信！！見えてる？, コンソールに出ている？')
