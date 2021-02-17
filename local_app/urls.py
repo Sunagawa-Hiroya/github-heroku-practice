@@ -20,5 +20,5 @@ from .views import testfunc, create_message
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', testfunc),
-    path('callback/', create_message)
+    path('callback', create_message)
 ]
